@@ -18,7 +18,7 @@ body {
     font-weight: 500;
 
     .modal-content {
-      overflow-y: auto;
+      /*   overflow-y: auto; */
       scrollbar-width: none;
       border: none;
       display: flex;
@@ -45,12 +45,25 @@ body {
           color: transparent;
           font-size: 1.6rem;
           font-weight: 600;
+          margin-bottom: 0.5rem;
         }
       }
 
       .modal-body {
         background-color: transparent;
-
+        overflow-y: auto;
+        padding-top: 0.5rem;
+        mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          );
+        mask-composite: intersect;
         .modal-body-container {
           background-color: transparent;
 
@@ -62,7 +75,7 @@ body {
             &.recaptcha {
               font-size: 0.8rem;
             }
-            
+
             .contact-link {
               color: rgb(172, 198, 228);
             }
@@ -84,6 +97,7 @@ body {
         }
       }
       .modal-footer {
+        padding-top: 0.5rem;
         .modal-close {
           border: none;
           width: inherit;
@@ -107,6 +121,14 @@ body {
     .modal-content:focus {
       outline: none;
       border: none;
+    }
+  }
+
+  @media (max-height: 800px) {
+    .modal {
+      .modal-content {
+        height: 80%;
+      }
     }
   }
 }
@@ -182,6 +204,7 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: max-content;
     transform: translate(-50%, -50%);
     z-index: 6000;
 
@@ -322,6 +345,16 @@ p {
             );
           mask-composite: intersect;
 
+          .list {
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            list-style: none;
+            font-size: 1rem;
+            line-height: 1.7rem;
+            margin-bottom: 1rem;
+          }
           .sub-title {
             margin: auto;
             font-size: 1.7rem;
@@ -350,7 +383,7 @@ p {
             justify-content: space-evenly;
             /* gap: 3rem; */
             margin-top: 1rem;
-            margin-bottom: 1rem;
+   /*          margin-bottom: 1rem; */
 
             .tech-logo {
               display: flex;
@@ -776,11 +809,138 @@ p {
 }
 
 @media (max-width: 1200px) {
+  body {
+    .modal {
+      .modal-content {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        padding: 1rem;
+      }
+    }
+  }
   .app {
+    .header {
+      height: 11dvh;
+
+      .logo {
+        width: 6rem;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        margin-left: 8rem;
+      }
+    }
     .content {
       .description-wrapper {
         .description {
           width: 80%;
+        }
+      }
+    }
+    .content {
+      .description-wrapper {
+        height: 80%;
+        margin-bottom: 0.7rem;
+        display: flex;
+        align-items: center;
+        .description {
+          padding: 1rem 0.5rem;
+          width: 70%;
+          height: 90%;
+          border-radius: 01rem;
+
+          .description-content {
+            scrollbar-width: thin;
+            .sub-title {
+              font-size: 1.2rem;
+            }
+
+            .text {
+              font-size: 1rem;
+            }
+
+            .tech-logo-container {
+              .tech-logo {
+                .tech-logo-img {
+                  width: 1.7rem;
+                }
+                .tech-logo-name {
+                  font-size: 0.6rem;
+                }
+              }
+            }
+
+            .icons {
+              .link {
+                font-size: 1.2rem;
+                .logo-toupro {
+                  max-width: 1.9rem;
+                }
+              }
+            }
+          }
+
+          .contact {
+            .sub-title {
+              font-size: 1.2rem;
+            }
+            .form {
+              width: 80%;
+              max-width: 100%;
+              height: 100%;
+
+              .form-label {
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+              }
+
+              .form-input,
+              .form-textarea {
+                width: 90%;
+                padding: 0.4rem 0.5rem;
+                margin: auto;
+                font-size: 0.8rem;
+              }
+
+              .form-textarea {
+                height: 5rem;
+              }
+
+              .form-button-wrapper {
+                .phone {
+                  .phone-logo {
+                    width: 1.5rem;
+                  }
+                  .number {
+                    font-size: 0.8rem;
+                  }
+                }
+
+                .form-button {
+                  width: 110px;
+                  height: 35px;
+                  font-size: 0.8rem;
+                }
+
+                .form-button::before {
+                  width: 108px;
+                  height: 38px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .button-wrapper {
+        gap: 5rem;
+        padding: 0.5rem;
+
+        .button-home,
+        .button-mail {
+          width: 3rem;
         }
       }
     }

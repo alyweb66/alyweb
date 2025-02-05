@@ -49,7 +49,7 @@ function App() {
         <Grow in={growIn} timeout={500} onExited={() => setIsOpen(false)}>
           <div className="modal-content">
             <header className="modal-header">
-              <h1 className="modal-header-title">Mentions Legales</h1>
+              <h1 className="modal-header-title">Mentions Légales</h1>
             </header>
             <div className="modal-body">
               <div className="modal-body-container">
@@ -208,7 +208,7 @@ function Content() {
           // Add token to EmailJS form data
           const templateParams = {
             ...formData,
-            "g-recaptcha-response": token, // EmailJS verify the token 
+            "g-recaptcha-response": token, // EmailJS verify the token
           };
 
           // Send email with EmailJS
@@ -368,14 +368,25 @@ function Content() {
                 >
                   <h2 className=" sub-title">Bienvenue chez Alyweb</h2>
                   <p className=" text">
-                    Chez AlyWeb, nous proposons des solutions
-                    d&apos;accompagnement et de développement web sur mesure, en
-                    utilisant des technologies modernes et performantes.
-                    <br />
+                    Vous souhaitez moderniser votre présence en ligne ou
+                    optimiser vos outils internes, nous créons des solutions sur
+                    mesure adaptées à vos besoins.
+                    
+                   {/*  <br />
                     <br />
                     N&apos;hésitez pas à nous contacter pour plus
-                    d&apos;informations.
+                    d&apos;informations. */}
                   </p>
+                  <ul className=" list">
+                      <li>✔️ Sites web responsive et design attractif</li>
+                      <li>
+                        ✔️ Applications mobiles intuitives et performantes
+                      </li>
+                      <li>
+                        ✔️ Solutions personnalisées adaptées à vos besoins
+                      </li>
+                      <li>✔️ Accompagnement et expertise à chaque étape</li>
+                    </ul>
                   <h2 className="sub-title">
                     Les technologies que nous utilisons
                   </h2>
