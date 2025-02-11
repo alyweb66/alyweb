@@ -82,7 +82,7 @@ function App() {
                   Pierrick ALEMANY
                 </p>
                 <p className="modal-body-container-text">
-                  <strong className="strong">Siret:</strong> En attente
+                  <strong className="strong">Siret:</strong> 52090245300023
                 </p>
                 <p className="modal-body-container-text">
                   <strong className="strong">Hébergeur:</strong> Hostinger
