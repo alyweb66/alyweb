@@ -1,25 +1,139 @@
 {
-  "hash": "b22fbe3f",
-  "configHash": "60d3f913",
-  "lockfileHash": "436d5d37",
-  "browserHash": "9bcea24b",
+  "hash": "29bd424e",
+  "configHash": "eb25b7c5",
+  "lockfileHash": "9afb8c90",
+  "browserHash": "e5d6e0e1",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "09bf1be6",
+      "fileHash": "411d6dc2",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "2d118c73",
+      "fileHash": "b93401bd",
       "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "c23fbd92",
+      "needsInterop": false
+    },
+    "@mui/material/Alert": {
+      "src": "../../node_modules/@mui/material/Alert/index.js",
+      "file": "@mui_material_Alert.js",
+      "fileHash": "692dd77c",
+      "needsInterop": false
+    },
+    "@mui/material/Stack": {
+      "src": "../../node_modules/@mui/material/Stack/index.js",
+      "file": "@mui_material_Stack.js",
+      "fileHash": "18b021db",
+      "needsInterop": false
+    },
+    "@mui/material/Modal": {
+      "src": "../../node_modules/@mui/material/Modal/index.js",
+      "file": "@mui_material_Modal.js",
+      "fileHash": "50d3cac4",
+      "needsInterop": false
+    },
+    "@mui/material/AlertTitle": {
+      "src": "../../node_modules/@mui/material/AlertTitle/index.js",
+      "file": "@mui_material_AlertTitle.js",
+      "fileHash": "ffc83e8c",
+      "needsInterop": false
+    },
+    "@emailjs/browser": {
+      "src": "../../node_modules/@emailjs/browser/es/index.js",
+      "file": "@emailjs_browser.js",
+      "fileHash": "4bf6af41",
+      "needsInterop": false
+    },
+    "@mui/material/Grow": {
+      "src": "../../node_modules/@mui/material/Grow/index.js",
+      "file": "@mui_material_Grow.js",
+      "fileHash": "eeb8d6ba",
+      "needsInterop": false
+    },
+    "prop-types": {
+      "src": "../../node_modules/prop-types/index.js",
+      "file": "prop-types.js",
+      "fileHash": "e111873b",
+      "needsInterop": true
+    },
+    "dompurify": {
+      "src": "../../node_modules/dompurify/dist/purify.es.mjs",
+      "file": "dompurify.js",
+      "fileHash": "bcdff145",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "e461e54b",
+      "needsInterop": false
+    },
+    "three/examples/jsm/controls/OrbitControls": {
+      "src": "../../node_modules/three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_examples_jsm_controls_OrbitControls.js",
+      "fileHash": "9791560d",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "2fdea7e6",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-GFWMZNU4": {
-      "file": "chunk-GFWMZNU4.js"
+    "chunk-26N5JRUF": {
+      "file": "chunk-26N5JRUF.js"
+    },
+    "chunk-LOZHJMDH": {
+      "file": "chunk-LOZHJMDH.js"
+    },
+    "chunk-M6WIIMK6": {
+      "file": "chunk-M6WIIMK6.js"
+    },
+    "chunk-5QUEF36F": {
+      "file": "chunk-5QUEF36F.js"
+    },
+    "chunk-UWVF7XSY": {
+      "file": "chunk-UWVF7XSY.js"
+    },
+    "chunk-JI2T62XC": {
+      "file": "chunk-JI2T62XC.js"
+    },
+    "chunk-HW6G62XI": {
+      "file": "chunk-HW6G62XI.js"
+    },
+    "chunk-4IK42ZI2": {
+      "file": "chunk-4IK42ZI2.js"
+    },
+    "chunk-AIZVQEV2": {
+      "file": "chunk-AIZVQEV2.js"
+    },
+    "chunk-6LCDYKL7": {
+      "file": "chunk-6LCDYKL7.js"
+    },
+    "chunk-PHFSEZYT": {
+      "file": "chunk-PHFSEZYT.js"
+    },
+    "chunk-RGNGTCU6": {
+      "file": "chunk-RGNGTCU6.js"
+    },
+    "chunk-6H6IX42F": {
+      "file": "chunk-6H6IX42F.js"
+    },
+    "chunk-W4EHDCLL": {
+      "file": "chunk-W4EHDCLL.js"
+    },
+    "chunk-EWTE5DHJ": {
+      "file": "chunk-EWTE5DHJ.js"
     }
   }
 }
