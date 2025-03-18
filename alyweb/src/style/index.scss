@@ -19,6 +19,9 @@ body {
 
     .modal-content {
       /*   overflow-y: auto; */
+      &::-webkit-scrollbar {
+        display: none;
+      }
       scrollbar-width: none;
       border: none;
       display: flex;
@@ -40,8 +43,8 @@ body {
             #65a9dd,
             #988db1
           );
-          background-clip: text;
           -webkit-background-clip: text;
+          background-clip: text;
           color: transparent;
           font-size: 1.6rem;
           font-weight: 600;
@@ -53,6 +56,16 @@ body {
         background-color: transparent;
         overflow-y: auto;
         padding-top: 0.5rem;
+        -webkit-mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          );
         mask-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 1) 97%,
@@ -88,8 +101,8 @@ body {
                 #daba9d,
                 #0fd2ec
               );
-              background-clip: text;
               -webkit-background-clip: text;
+              background-clip: text;
               color: transparent;
               margin-right: 0.5rem;
             }
@@ -236,6 +249,16 @@ p {
     opacity: 1;
     z-index: 0;
     filter: blur(0px);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 97%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 97%,
+      rgba(0, 0, 0, 0) 100%
+    );
     mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1) 10%,
@@ -333,6 +356,16 @@ p {
           height: 100%;
           overflow-y: auto;
           scrollbar-width: none;
+          -webkit-mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 97%,
+            rgba(0, 0, 0, 0) 100%
+          );
           mask-image: linear-gradient(
               to top,
               rgba(0, 0, 0, 1) 97%,
@@ -390,6 +423,7 @@ p {
               flex-direction: column;
               align-items: center;
               width: inherit;
+              margin: 0 0.5rem;
 
               .tech-logo-img {
                 width: 2.3rem;
@@ -447,6 +481,16 @@ p {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        -webkit-mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 97%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 97%,
+          rgba(0, 0, 0, 0) 100%
+        );
         mask-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 1) 97%,
@@ -554,8 +598,8 @@ p {
             #65a9dd,
             #988db1
           );
-          background-clip: text;
           -webkit-background-clip: text;
+          background-clip: text;
           color: transparent;
         }
 
@@ -581,8 +625,8 @@ p {
               #daba9d,
               #0fd2ec
             );
-            background-clip: text;
             -webkit-background-clip: text;
+            background-clip: text;
             color: transparent;
 
             &.textarea {
@@ -693,10 +737,6 @@ p {
               filter: blur(30px);
             }
 
-            /*  .form-button:hover::before {
-              transform: rotate(-180deg);
-            } */
-
             .form-button:active::before {
               scale: 0.7;
             }
@@ -778,6 +818,11 @@ p {
     background: conic-gradient(at top left, #27272a, #52525b, #a1a1aa);
     color: rgb(255, 255, 255);
     text-align: center;
+    -webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
     mask-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 90%,
@@ -1010,8 +1055,12 @@ p {
             }
 
             .tech-logo-container {
+              display: flex;
+              flex-wrap: wrap;
+          /*     height: auto; */
               .tech-logo {
                 .tech-logo-img {
+         
                   width: 1.7rem;
                 }
                 .tech-logo-name {

@@ -177,7 +177,7 @@ function Content() {
     // Create a script tag to load reCAPTCHA
     if (!window.grecaptcha) {
       const script = document.createElement("script");
-      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}&badge=inline`;
+      script.src = `https://www.google.com/recaptcha/enterprise.js?render=${RECAPTCHA_SITE_KEY}&badge=inline`;
       script.async = true;
       script.defer = true;
       document.body.appendChild(script);
@@ -258,6 +258,16 @@ function Content() {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       alt: "Node.js",
       delay: 0.4,
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      alt: "Next.js",
+      delay: 0.5,
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      alt: "MySQL",
+      delay: 0.7,
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
